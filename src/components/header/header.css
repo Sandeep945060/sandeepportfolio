@@ -1,0 +1,87 @@
+header {
+  height: 100%;
+  padding-top: 7rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 5.5rem;
+}
+
+.header__socials {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.header__socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.scroll__down {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header__socials a:hover {
+  background-color: white;
+  color: var(--color-primary); /* Use your primary theme color */
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
+}
+
+@media screen and (max-width: 1024px){
+  header {
+    height: 68vh;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}
